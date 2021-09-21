@@ -3,3 +3,8 @@
 ## 1.0.0
 
 - Initial version, created by Sergey Seroukhov and Danil Prisiazhnyi
+
+
+## 1.0.1
+
+- Fixed **MustacheTemplate** evaluation for null variables

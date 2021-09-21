@@ -144,12 +144,12 @@ class MustacheTemplate {
           break;
         case MustacheTokenType.Variable:
           var value1 = getVariable(variables, token.value);
-          result += value1;
+          result += value1 ?? '';
           break;
         case MustacheTokenType.EscapedVariable:
           var value2 = getVariable(variables, token.value);
           value2 = _escapeString(value2);
-          result += value2;
+          result += value2 ?? '';
           break;
         case MustacheTokenType.Section:
           var defined1 = _isDefinedVariable(variables, token.value);
