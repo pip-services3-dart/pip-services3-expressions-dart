@@ -132,4 +132,9 @@ abstract class IVariantOperations {
   /// - [value2] The second operand for this operation.
   /// Returns A result variant object.
   Variant getElement(Variant value1, Variant value2);
+
+  /// Convert variant type to string representation
+  /// - [value] a variant type to be converted.
+  /// Returns a string representation of the type.
+  String typeToString(VariantType value);
 }

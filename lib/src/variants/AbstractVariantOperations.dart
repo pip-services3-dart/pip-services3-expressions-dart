@@ -8,6 +8,7 @@ abstract class AbstractVariantOperations implements IVariantOperations {
   /// Convert variant type to string representation
   /// - [value] a variant type to be converted.
   /// Returns a string representation of the type.
+  @override
   String typeToString(VariantType value) {
     switch (value) {
       case VariantType.Null:
